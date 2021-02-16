@@ -25,11 +25,10 @@ date_to - data zakończenia świadczenia usługi
 Uruchomienie:
 
 1. Pobierz repozytorium
-2. Potrzebujesz Python 3.8.1 oraz Docker 20.10.2 lub wyżej
+2. Potrzebujesz Python 3.8.1 oraz Docker 20.10.2
 3. Zbuduj obraz dockerowy poleceniem: docker biuld -t [nazwa obrazu]
 4. Uruchom kontener poleceniem: docker run -p 5000:5000 [nazwa obrazu]. Aplikacja uruchamia się w trybie debug i zwraca informację o wysłanych zapytaniach POST oraz GET
 5. Usługa dostępna będzie pod adresem http://localhost:5000
 6. Z poziomu kontenera poleceniem: python post-example.py dodasz przykładową usługę w bazie
 7. Z poziomu kontenera poleceniem: python get-all.py wyświetlisz wszystkie usługi, podobnie pod adresem http://localhost:5000/v1/additionalservice wyświetlisz wsyzstkie usługi w przeglądarce
-8. http://localhost:5000/v1/additionalservice/{id} zwróci informacje tylko o konkretnej usłudze (jeżeli usługa o takim id istnieje). Usługa uruchamia się z dwoma testowymi dodatkowymi
- usługami w bazie o id 0 oraz 1
+8. http://localhost:5000/v1/additionalservice/{id} zwróci informacje tylko o konkretnej usłudze (jeżeli usługa o takim id istnieje). Usługa uruchamia się z dwoma testowymi dodatkowymi usługami w bazie o id 0 oraz 1
